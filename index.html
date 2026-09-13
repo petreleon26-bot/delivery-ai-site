@@ -22,7 +22,7 @@
     .accent{background:linear-gradient(90deg,#e7f7ff 0%,var(--cyan) 35%,var(--blue) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
     .lead{font-size:1.16rem;color:var(--muted);max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.trust{margin-top:30px;display:flex;flex-wrap:wrap;gap:16px;color:#c7d5e7;font-size:.92rem}.trust span::before{content:"✓";color:var(--green);font-weight:900;margin-right:7px}
     .visual{min-height:520px;border:1px solid var(--border);border-radius:28px;padding:20px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.018));box-shadow:var(--shadow);position:relative;overflow:hidden}
-    .visual:before{content:"";position:absolute;inset:-20% auto auto -15%;width:280px;height:280px;border-radius:50%;background:rgba(36,163,255,.15);filter:blur(20px)}
+    .visual:before{content:"";position:absolute;inset:-20% auto auto -15%;width:280px;height:280px;border-radius:50%;background:rgba(36,163,255,.15);filter:blur(20px)}.courier-phone-visual{display:flex;align-items:center;justify-content:center;padding:0;background:transparent;border:0;box-shadow:none;overflow:visible}.courier-phone-visual:before{display:none}.courier-phone-img{display:block;width:100%;max-width:560px;height:auto;object-fit:contain}
     .desktop{position:relative;background:#f7fbff;color:#10233d;border-radius:18px;padding:16px;box-shadow:0 18px 45px rgba(0,0,0,.28);margin-top:18px}
     .desktop-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.dotrow{display:flex;gap:6px}.dot{width:8px;height:8px;border-radius:50%;background:#d5dfec}.mini-badge{font-size:.72rem;color:#2b6ca3;background:#e6f4ff;padding:5px 8px;border-radius:999px}
     .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}.stat{background:#edf5fb;border:1px solid #d9e7f1;border-radius:12px;padding:13px}.stat strong{display:block;font-size:1.25rem}.stat span{font-size:.72rem;color:#637a91}
@@ -33,7 +33,7 @@
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--border);border-radius:20px;padding:24px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));box-shadow:0 12px 40px rgba(0,0,0,.12)}
     .icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:rgba(36,163,255,.13);border:1px solid rgba(98,216,255,.16);color:#9fe7ff;font-size:1.1rem;margin-bottom:17px}.card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
     .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}.step{padding:20px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,.035);min-height:150px}.step-num{font-weight:900;color:var(--cyan);font-size:.82rem}.step h4{margin:10px 0 8px}.step p{margin:0;color:var(--muted);font-size:.88rem}
-    .showcase{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.shot-placeholder{min-height:360px;border-radius:22px;border:1px dashed rgba(98,216,255,.35);display:grid;place-items:center;text-align:center;padding:30px;background:linear-gradient(135deg,rgba(36,163,255,.10),rgba(255,255,255,.025));color:#c6d7e9}.shot-placeholder strong{display:block;color:white;font-size:1.25rem;margin-bottom:6px}.product-shot{min-height:360px;border-radius:22px;border:1px solid var(--border);overflow:hidden;background:#081321;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}.product-shot img{display:block;width:100%;height:100%;object-fit:contain}.pilot-price{margin-top:14px;color:white;font-size:1.12rem}.pilot-price strong{font-size:1.55rem;color:var(--cyan)}
+    .showcase{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.shot-placeholder{min-height:360px;border-radius:22px;border:1px dashed rgba(98,216,255,.35);display:grid;place-items:center;text-align:center;padding:30px;background:linear-gradient(135deg,rgba(36,163,255,.10),rgba(255,255,255,.025));color:#c6d7e9}.shot-placeholder strong{display:block;color:white;font-size:1.25rem;margin-bottom:6px}
     .showcase-copy{border:1px solid var(--border);border-radius:22px;padding:30px;background:rgba(255,255,255,.035)}.checklist{display:grid;gap:13px;margin-top:20px}.check{display:flex;gap:10px;color:#d6e2f0}.check b{color:var(--green)}
     .pilot{padding:38px;border-radius:26px;border:1px solid rgba(98,216,255,.18);background:linear-gradient(135deg,rgba(36,163,255,.11),rgba(98,216,255,.045));display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:center}.pilot h3{font-size:2rem;margin:0 0 10px}.pilot p{color:var(--muted);margin:0}
     .contact{text-align:center;padding:92px 20px;border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01))}.contact h2{font-size:clamp(2.2rem,5vw,4.4rem);letter-spacing:-.045em;margin:0 0 14px}.contact p{color:var(--muted);max-width:650px;margin:0 auto 26px}
@@ -47,7 +47,7 @@
     <div class="wrap nav">
       <a class="brand" href="#top"><span class="mark">D</span><span>Delivery AI</span></a>
       <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#product">Product</a><a href="#pilot">Pilot</a></nav>
-      <a class="btn btn-primary" href="mailto:rokenogalleria@gmail.com?subject=Delivery%20AI%20Demo%20%2F%20Pilot%20Request">Request a Demo</a>
+      <a class="btn btn-primary" href="#contact">Request a Demo</a>
     </div>
   </header>
 
@@ -57,30 +57,12 @@
         <span class="eyebrow">AI for last-mile delivery communication</span>
         <h1>Smarter deliveries.<br><span class="accent">Better customer communication.</span></h1>
         <p class="lead">Delivery AI automates customer calls when a courier approaches, speaks the customer's language, extracts the important delivery details, and sends them to the courier in real time.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="mailto:rokenogalleria@gmail.com?subject=Delivery%20AI%20Demo%20%2F%20Pilot%20Request">Request a Demo</a><a class="btn" href="#how">See how it works</a></div>
+        <div class="hero-actions"><a class="btn btn-primary" href="#contact">Request a Demo</a><a class="btn" href="#how">See how it works</a></div>
         <div class="trust"><span>No separate courier app required</span><span>Multilingual</span><span>API-ready</span></div>
       </div>
 
-      <div class="visual" aria-label="Delivery AI product preview">
-        <div class="desktop">
-          <div class="desktop-head"><div class="dotrow"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><span class="mini-badge">Company Dispatch</span></div>
-          <div class="stats"><div class="stat"><strong>24</strong><span>Active deliveries</span></div><div class="stat"><strong>8</strong><span>Approaching</span></div><div class="stat"><strong>16</strong><span>Completed</span></div></div>
-          <div class="rows">
-            <div class="row"><b>TC-ORDER-014</b><span>Courier 021</span><span>ETA 3 min</span><span class="status">LIVE</span></div>
-            <div class="row"><b>TC-ORDER-015</b><span>Courier 008</span><span>ETA 7 min</span><span>ACTIVE</span></div>
-            <div class="row"><b>TC-ORDER-016</b><span>Courier 037</span><span>ETA 11 min</span><span>ACTIVE</span></div>
-            <div class="row"><b>TC-ORDER-017</b><span>Courier 014</span><span>ETA 16 min</span><span>ACTIVE</span></div>
-          </div>
-        </div>
-        <div class="phone">
-          <div class="phone-screen">
-            <div class="phone-top"><span>Delivery AI</span><span class="live">● LIVE</span></div>
-            <div class="order">TC-ORDER-014</div><div class="address">Brașov — delivery destination</div>
-            <div class="eta"><span>Estimated arrival</span><b>3 min</b></div>
-            <div class="callbox">AI customer call in progress</div>
-            <div class="infobox"><b>Live delivery information</b><br>Customer will come downstairs in 2 minutes.<br>Entrance: side gate.</div>
-          </div>
-        </div>
+      <div class="visual courier-phone-visual" aria-label="Delivery AI Courier App preview">
+        <img class="courier-phone-img" src="courier-phone.png" alt="Delivery AI Courier App on a smartphone">
       </div>
     </div>
 
@@ -118,7 +100,7 @@
         <h2 class="section-title">A lightweight layer on top of existing delivery operations.</h2>
         <p class="section-copy">Delivery AI is not designed to replace the company's dispatch platform. It adds intelligent customer communication exactly where it is needed.</p>
         <div class="showcase">
-          <div class="product-shot"><img src="delivery-ai-platform.png" alt="Delivery AI real courier application showing live delivery information and customer conversation"></div>
+          <div class="shot-placeholder"><div><strong>Real application screenshots will go here</strong>Company Dispatch • Courier App • Live Conversation • Delivery Information</div></div>
           <div class="showcase-copy">
             <h3>Designed for practical deployment</h3>
             <div class="checklist">
@@ -136,8 +118,8 @@
     <section id="pilot">
       <div class="wrap">
         <div class="pilot">
-          <div><h3>Start small. Prove the value. Scale fast.</h3><p>A first deployment can begin with one city, one hub, or a selected group of couriers. Once the workflow is validated, the same integration can expand across the company.</p><p class="pilot-price">Pilot programs from <strong>€4,500</strong></p><p>Final pricing depends on delivery volume, call usage and integration requirements.</p></div>
-          <div style="text-align:right"><a class="btn btn-primary" href="mailto:rokenogalleria@gmail.com?subject=Delivery%20AI%20Demo%20%2F%20Pilot%20Request">Start a Pilot</a></div>
+          <div><h3>Start small. Prove the value. Scale fast.</h3><p>A first deployment can begin with one city, one hub, or a selected group of couriers. Once the workflow is validated, the same integration can expand across the company.</p></div>
+          <div style="text-align:right"><a class="btn btn-primary" href="#contact">Start a Pilot</a></div>
         </div>
       </div>
     </section>
@@ -146,7 +128,7 @@
       <div class="wrap">
         <h2>See Delivery AI in a real delivery scenario.</h2>
         <p>We can demonstrate the complete flow: delivery creation, courier ETA, automatic customer call, multilingual conversation, and live courier information.</p>
-        <a class="btn btn-primary" href="mailto:rokenogalleria@gmail.com?subject=Delivery%20AI%20Demo%20%2F%20Pilot%20Request">Request a Demo</a>
+        <a class="btn btn-primary" href="mailto:hello@getdeliveryai.eu?subject=Delivery%20AI%20Demo%20Request">Request a Demo</a>
       </div>
     </section>
   </main>
