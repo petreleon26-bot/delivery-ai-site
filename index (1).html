@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Delivery AI automates customer communication for last-mile delivery with multilingual AI calls, ETA-based automation, and real-time courier information." />
+  <title>Delivery AI — Smarter Last-Mile Communication</title>
+  <style>
+    :root{--bg:#07111f;--bg2:#0b1830;--card:#0f203c;--text:#f7fbff;--muted:#a9bad0;--blue:#24a3ff;--cyan:#62d8ff;--green:#3fd28b;--border:rgba(255,255,255,.09);--shadow:0 24px 80px rgba(0,0,0,.28);--max:1180px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% 10%,rgba(36,163,255,.15),transparent 32%),radial-gradient(circle at 85% 12%,rgba(98,216,255,.10),transparent 28%),linear-gradient(180deg,var(--bg),#081525 62%,#07111f);color:var(--text);line-height:1.55}
+    a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;backdrop-filter:blur(16px);background:rgba(7,17,31,.78);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.22rem}
+    .mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#04121f;font-weight:900;box-shadow:0 10px 25px rgba(36,163,255,.28)}
+    nav{display:flex;gap:26px;color:#c9d6e6;font-size:.95rem}nav a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:700;border:1px solid var(--border);transition:.2s ease}
+    .btn-primary{background:linear-gradient(135deg,var(--cyan),var(--blue));color:#04131f;border:0;box-shadow:0 12px 34px rgba(36,163,255,.25)}.btn:hover{transform:translateY(-1px)}
+    .hero{padding:96px 0 70px;display:grid;grid-template-columns:1.03fr .97fr;gap:56px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(98,216,255,.24);background:rgba(98,216,255,.07);color:#bcefff;padding:7px 11px;border-radius:999px;font-size:.84rem;font-weight:700;letter-spacing:.02em}
+    h1{margin:18px 0 20px;font-size:clamp(2.65rem,6vw,5.6rem);line-height:.95;letter-spacing:-.055em;max-width:760px}
+    .accent{background:linear-gradient(90deg,#e7f7ff 0%,var(--cyan) 35%,var(--blue) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:1.16rem;color:var(--muted);max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.trust{margin-top:30px;display:flex;flex-wrap:wrap;gap:16px;color:#c7d5e7;font-size:.92rem}.trust span::before{content:"✓";color:var(--green);font-weight:900;margin-right:7px}
+    .visual{min-height:520px;border:1px solid var(--border);border-radius:28px;padding:20px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.018));box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .visual:before{content:"";position:absolute;inset:-20% auto auto -15%;width:280px;height:280px;border-radius:50%;background:rgba(36,163,255,.15);filter:blur(20px)}
+    .desktop{position:relative;background:#f7fbff;color:#10233d;border-radius:18px;padding:16px;box-shadow:0 18px 45px rgba(0,0,0,.28);margin-top:18px}
+    .desktop-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.dotrow{display:flex;gap:6px}.dot{width:8px;height:8px;border-radius:50%;background:#d5dfec}.mini-badge{font-size:.72rem;color:#2b6ca3;background:#e6f4ff;padding:5px 8px;border-radius:999px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}.stat{background:#edf5fb;border:1px solid #d9e7f1;border-radius:12px;padding:13px}.stat strong{display:block;font-size:1.25rem}.stat span{font-size:.72rem;color:#637a91}
+    .rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1.1fr 1fr 1fr .8fr;gap:8px;padding:10px;background:white;border:1px solid #e4ebf2;border-radius:10px;font-size:.72rem;align-items:center}.status{color:#1c8b5b;font-weight:800}
+    .phone{position:absolute;right:22px;bottom:18px;width:42%;background:#08111e;border:8px solid #0b0e12;border-radius:28px;padding:9px;box-shadow:0 24px 60px rgba(0,0,0,.42)}.phone-screen{background:#f8fbff;color:#12223c;border-radius:19px;padding:16px;min-height:300px}
+    .phone-top{display:flex;justify-content:space-between;font-size:.72rem;color:#59718d}.live{color:#11885b;font-weight:800}.order{font-weight:900;font-size:1.2rem;margin:18px 0 8px}.address{font-size:.83rem;color:#62758c;margin-bottom:16px}.eta{display:flex;justify-content:space-between;background:#eaf6ff;border-radius:12px;padding:12px;margin-bottom:10px}.callbox{background:#0b7eea;color:white;border-radius:12px;padding:12px;text-align:center;font-weight:800;margin-bottom:8px}.infobox{border:1px solid #dbe5ee;border-radius:12px;padding:11px;font-size:.78rem;color:#425970}
+    section{padding:78px 0}.section-title{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.035em;margin:0 0 12px}.section-copy{color:var(--muted);max-width:720px;margin:0 0 34px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--border);border-radius:20px;padding:24px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));box-shadow:0 12px 40px rgba(0,0,0,.12)}
+    .icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:rgba(36,163,255,.13);border:1px solid rgba(98,216,255,.16);color:#9fe7ff;font-size:1.1rem;margin-bottom:17px}.card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}.step{padding:20px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,.035);min-height:150px}.step-num{font-weight:900;color:var(--cyan);font-size:.82rem}.step h4{margin:10px 0 8px}.step p{margin:0;color:var(--muted);font-size:.88rem}
+    .showcase{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.shot-placeholder{min-height:360px;border-radius:22px;border:1px dashed rgba(98,216,255,.35);display:grid;place-items:center;text-align:center;padding:30px;background:linear-gradient(135deg,rgba(36,163,255,.10),rgba(255,255,255,.025));color:#c6d7e9}.shot-placeholder strong{display:block;color:white;font-size:1.25rem;margin-bottom:6px}
+    .showcase-copy{border:1px solid var(--border);border-radius:22px;padding:30px;background:rgba(255,255,255,.035)}.checklist{display:grid;gap:13px;margin-top:20px}.check{display:flex;gap:10px;color:#d6e2f0}.check b{color:var(--green)}
+    .pilot{padding:38px;border-radius:26px;border:1px solid rgba(98,216,255,.18);background:linear-gradient(135deg,rgba(36,163,255,.11),rgba(98,216,255,.045));display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:center}.pilot h3{font-size:2rem;margin:0 0 10px}.pilot p{color:var(--muted);margin:0}
+    .contact{text-align:center;padding:92px 20px;border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01))}.contact h2{font-size:clamp(2.2rem,5vw,4.4rem);letter-spacing:-.045em;margin:0 0 14px}.contact p{color:var(--muted);max-width:650px;margin:0 auto 26px}
+    footer{border-top:1px solid var(--border);padding:28px 0;color:#879ab1;font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media (max-width:980px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:68px}.visual{min-height:480px}.grid{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}.showcase,.pilot{grid-template-columns:1fr}}
+    @media (max-width:640px){.wrap{width:min(100% - 24px,var(--max))}.grid,.flow{grid-template-columns:1fr}.visual{min-height:430px;padding:12px}.stats{grid-template-columns:1fr 1fr 1fr}.row{grid-template-columns:1fr 1fr;font-size:.66rem}.phone{width:54%;right:10px;bottom:10px}.phone-screen{min-height:260px;padding:12px}.hero{gap:34px}.nav .btn{padding:10px 13px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark">D</span><span>Delivery AI</span></a>
+      <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#product">Product</a><a href="#pilot">Pilot</a></nav>
+      <a class="btn btn-primary" href="#contact">Request a Demo</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <span class="eyebrow">AI for last-mile delivery communication</span>
+        <h1>Smarter deliveries.<br><span class="accent">Better customer communication.</span></h1>
+        <p class="lead">Delivery AI automates customer calls when a courier approaches, speaks the customer's language, extracts the important delivery details, and sends them to the courier in real time.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#contact">Request a Demo</a><a class="btn" href="#how">See how it works</a></div>
+        <div class="trust"><span>No separate courier app required</span><span>Multilingual</span><span>API-ready</span></div>
+      </div>
+
+      <div class="visual" aria-label="Delivery AI product preview">
+        <div class="desktop">
+          <div class="desktop-head"><div class="dotrow"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><span class="mini-badge">Company Dispatch</span></div>
+          <div class="stats"><div class="stat"><strong>24</strong><span>Active deliveries</span></div><div class="stat"><strong>8</strong><span>Approaching</span></div><div class="stat"><strong>16</strong><span>Completed</span></div></div>
+          <div class="rows">
+            <div class="row"><b>TC-ORDER-014</b><span>Courier 021</span><span>ETA 3 min</span><span class="status">LIVE</span></div>
+            <div class="row"><b>TC-ORDER-015</b><span>Courier 008</span><span>ETA 7 min</span><span>ACTIVE</span></div>
+            <div class="row"><b>TC-ORDER-016</b><span>Courier 037</span><span>ETA 11 min</span><span>ACTIVE</span></div>
+            <div class="row"><b>TC-ORDER-017</b><span>Courier 014</span><span>ETA 16 min</span><span>ACTIVE</span></div>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-top"><span>Delivery AI</span><span class="live">● LIVE</span></div>
+            <div class="order">TC-ORDER-014</div><div class="address">Brașov — delivery destination</div>
+            <div class="eta"><span>Estimated arrival</span><b>3 min</b></div>
+            <div class="callbox">AI customer call in progress</div>
+            <div class="infobox"><b>Live delivery information</b><br>Customer will come downstairs in 2 minutes.<br>Entrance: side gate.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2 class="section-title">Built for the last few minutes of delivery.</h2>
+        <p class="section-copy">Delivery AI focuses on the moment where communication problems create delays, missed handovers, language barriers, and unnecessary calls for couriers.</p>
+        <div class="grid">
+          <article class="card"><div class="icon">☎</div><h3>Automatic AI calls</h3><p>Trigger customer calls based on ETA so the courier does not have to stop and call manually.</p></article>
+          <article class="card"><div class="icon">◎</div><h3>Multilingual conversations</h3><p>The AI speaks with the customer in their language and sends the useful information to the courier in theirs.</p></article>
+          <article class="card"><div class="icon">⚡</div><h3>Real-time courier information</h3><p>Waiting time, access instructions, floor, entrance details and other useful delivery information appear instantly.</p></article>
+          <article class="card"><div class="icon">↔</div><h3>Works with existing systems</h3><p>Integrate through API without replacing the company's current dispatch or courier infrastructure.</p></article>
+          <article class="card"><div class="icon">🔒</div><h3>Secure courier sessions</h3><p>Couriers can receive secure access to the delivery interface without handling company API credentials.</p></article>
+          <article class="card"><div class="icon">↗</div><h3>Scales beyond one city</h3><p>Start with one city or hub, then expand the same integration across regions or nationally.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <h2 class="section-title">How Delivery AI works</h2>
+        <p class="section-copy">A simple flow that fits into the delivery operation the company already uses.</p>
+        <div class="flow">
+          <div class="step"><div class="step-num">01</div><h4>Delivery created</h4><p>The company's system sends the delivery data to Delivery AI.</p></div>
+          <div class="step"><div class="step-num">02</div><h4>Courier approaches</h4><p>ETA is updated as the courier gets closer to the customer.</p></div>
+          <div class="step"><div class="step-num">03</div><h4>AI calls customer</h4><p>The call can trigger automatically at the configured ETA threshold.</p></div>
+          <div class="step"><div class="step-num">04</div><h4>AI understands</h4><p>The system extracts the useful delivery instructions from the conversation.</p></div>
+          <div class="step"><div class="step-num">05</div><h4>Courier receives it</h4><p>The information appears live in the courier interface in the courier's language.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="wrap">
+        <h2 class="section-title">A lightweight layer on top of existing delivery operations.</h2>
+        <p class="section-copy">Delivery AI is not designed to replace the company's dispatch platform. It adds intelligent customer communication exactly where it is needed.</p>
+        <div class="showcase">
+          <div class="shot-placeholder"><div><strong>Real application screenshots will go here</strong>Company Dispatch • Courier App • Live Conversation • Delivery Information</div></div>
+          <div class="showcase-copy">
+            <h3>Designed for practical deployment</h3>
+            <div class="checklist">
+              <div class="check"><b>✓</b><span>Company-side API integration</span></div>
+              <div class="check"><b>✓</b><span>Secure courier web access</span></div>
+              <div class="check"><b>✓</b><span>No customer-facing app required</span></div>
+              <div class="check"><b>✓</b><span>Configurable ETA-based automation</span></div>
+              <div class="check"><b>✓</b><span>Suitable for pilot rollout before national scale</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot">
+      <div class="wrap">
+        <div class="pilot">
+          <div><h3>Start small. Prove the value. Scale fast.</h3><p>A first deployment can begin with one city, one hub, or a selected group of couriers. Once the workflow is validated, the same integration can expand across the company.</p></div>
+          <div style="text-align:right"><a class="btn btn-primary" href="#contact">Start a Pilot</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>See Delivery AI in a real delivery scenario.</h2>
+        <p>We can demonstrate the complete flow: delivery creation, courier ETA, automatic customer call, multilingual conversation, and live courier information.</p>
+        <a class="btn btn-primary" href="mailto:hello@getdeliveryai.eu?subject=Delivery%20AI%20Demo%20Request">Request a Demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot"><span>© 2026 Delivery AI. All rights reserved.</span><span>AI-powered customer communication for last-mile delivery.</span></div>
+  </footer>
+</body>
+</html>
